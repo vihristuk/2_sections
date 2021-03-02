@@ -1,0 +1,148 @@
+.footer
+  &:before
+    content: "";
+    height: 8px;
+    width: 100%;
+    position: absolute;
+    background-color: #86362a;
+
+.footer__container
+  min-width: 91%;
+  height: 124px;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 45px;
+
+.footer__leftRow
+  display: flex;
+  flex-direction: column;
+  
+.footer__menu
+  display: flex;
+  margin-bottom: 20px;
+
+.footerMenu__item
+  text-transform: uppercase;
+  color: #cdcdcd;
+  padding: 5px 5px 5px 0;
+  margin-right: 16px;
+  &:hover
+    color: white;
+
+.footer__meta
+  text-transform: uppercase;
+  color: #585858;
+  font-size: 11px;
+  display: flex;
+
+.footer__copyright
+  margin-right: 30px;
+
+.meta__link
+  color: #585858;
+  margin-right: 15px;
+
+
+.footer__rightRow
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+.footer__phone
+  text-transform: uppercase;
+  margin-bottom: 20px;
+
+.footer__adress
+  text-transform: uppercase;
+  color: #585858;
+  font-size: 11px;
+  line-height: 1.5;
+
+@media (max-width: 950px)
+  .footer__container
+    flex-direction: column;
+    align-items: flex-start;
+
+  .footer__menu
+    margin-bottom: 80px;
+
+  .footerMenu__item
+    margin-right: 10px;
+
+  .footer__rightRow
+    align-items: center;
+    flex-direction: row;
+    margin-top: -110px;
+
+  .footer__phone
+    margin-right: 20px;
+
+  .footer__meta
+    margin-bottom: 30px;
+
+  .footer__adress
+    margin-bottom: 18px;
+
+@media (max-width: 768px)
+  .footer__container
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+
+  .footer__menu
+    padding-top: 35px;
+    margin-bottom: 80px;
+
+  .footerMenu__item
+    margin-right: 10px;
+
+  .footer__rightRow
+    align-items: center;
+    flex-direction: row;
+    margin-top: -110px;
+    
+  .footer__phone
+    margin-right: 20px;
+
+  .footer__meta
+    margin-bottom: 30px;
+
+  .footer__adress
+    margin-bottom: 18px;
+
+  .meta__link
+    display: inline-block;
+
+@media (max-width: 695px) 
+  .footer__menu
+    flex-wrap: wrap;
+    font-size: 12px;
+    padding-top: 0;
+    margin-bottom: 85px;
+
+  .footerMenu__item
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+  
+  .footer__container
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: unset;
+    min-width: 90%;
+
+  .footer__meta
+    flex-direction: column
+    line-height: 2;
+    margin-bottom: 20px;  
+
+  .footer__rightRow
+    flex-direction: column;
+    align-items: unset;
+    margin-top: -170px;
+    margin-bottom: 20px;
+
+  .footer__adress
+    font-weight: bold;
+
+  .meta__link
+    display: block;
